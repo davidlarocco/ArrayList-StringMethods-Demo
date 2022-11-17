@@ -45,13 +45,16 @@ public class ArrayListDemo {
         System.out.println("intArray size: " + intArray.size());
         System.out.println("dblArray size: " + dblArray.size());
         System.out.println();
+        
         // .remove() method
         strArray.remove(1);
         System.out.println("In a world where there is no orange: " + strArray);
+        
         for(int i = dblArray.size() / 2; i >= 0; i--) {
             dblArray.remove(i);
         }
         System.out.println("And values are cut in half: " + dblArray);
+        
         intArray.remove(0);
         System.out.println("And everything starts from one: " + intArray);
         System.out.println();
@@ -59,8 +62,10 @@ public class ArrayListDemo {
         // .set() method
         intArray.set(0, 0);
         System.out.println("Start from zero again: " + intArray);
+        
         strArray.set(5, "purple");
         System.out.println("Changed violet to purple: " + strArray);
+        
         for(int i = 0; i < dblArray.size(); i++) {
             dblArray.set(i, i + 1.0);
         }
@@ -70,8 +75,10 @@ public class ArrayListDemo {
         // .get() method
         String color = strArray.get(strArray.size() - 2);
         System.out.println("The best color: " + color);
+        
         int number = intArray.get(intArray.size() - 1);
         System.out.println("Lucky number: " + number);
+        
         double amount = dblArray.get(2);
         System.out.println("Two outta three ain't bad: " + amount);
         System.out.println();
